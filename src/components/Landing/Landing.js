@@ -19,6 +19,7 @@ function Landing() {
         <div className="room_name">
           <input type="text" placeholder="room name" />
         </div>
+        <div className="join_btn">Join Game</div>
       </div>
     </div>
   );
