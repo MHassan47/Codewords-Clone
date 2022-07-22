@@ -1,3 +1,20 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+
+  gap: 1rem;
+  font-size: 50px;
+  font-weight: 700;
+}
+.logo > div {
+  opacity: 0.5;
+}
+p {
+  color: rgb(58, 137, 194);
+}
+
 .landing_container {
   display: flex;
   flex-direction: column;
