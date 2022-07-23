@@ -1,0 +1,22 @@
+.board_container {
+  display: flex;
+}
+
+.board_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(5, 180px);
+  gap: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(42, 29, 66);
+  border: 3px solid grey;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+}
