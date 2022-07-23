@@ -400,3 +400,5 @@ const WORDS = [
   "WORM",
   "YARD",
 ];
+
+export default WORDS;
