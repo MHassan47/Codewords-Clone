@@ -44,10 +44,14 @@ p {
   cursor: pointer;
 }
 
-.header > *:hover {
+/* .header > *:hover {
   color: #0ff;
   font-size: 28px;
   transform: 0.5s;
+} */
+h2:active {
+  color: #0ff;
+  border-bottom: 2px solid #19d3ef;
 }
 
 .username {
@@ -81,4 +85,10 @@ input {
   width: 200px;
   height: 12%;
   box-shadow: 0 0 15px 1px #0ff;
+  cursor: pointer;
+}
+
+.join_btn:hover {
+  width: 210px;
+  height: 13%;
 }

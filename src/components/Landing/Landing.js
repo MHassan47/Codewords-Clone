@@ -1,7 +1,10 @@
 import React from "react";
 import "./Landing.css";
+import { useState } from "react";
 
 function Landing() {
+  const [gameType, setGameType] = useState();
+  console.log(gameType);
   return (
     <div>
       <div className="logo">
@@ -10,8 +13,15 @@ function Landing() {
       </div>
       <div className="landing_container">
         <div className="header">
-          <div className="join_game">Join Game</div>
-          <div className="create_game">Create Game</div>
+          <h2 className="join_game" onClick={() => setGameType("Join Game")}>
+            Join Game
+          </h2>
+          <h2
+            className="create_game"
+            onClick={() => setGameType("Create Game")}
+          >
+            Create Game
+          </h2>
         </div>
         <div className="username">
           <input type="text" placeholder=" username" />
@@ -19,7 +29,7 @@ function Landing() {
         <div className="room_name">
           <input type="text" placeholder="room name" />
         </div>
-        <div className="join_btn">Join Game</div>
+        <div className="join_btn">{gameType}</div>
       </div>
     </div>
   );
